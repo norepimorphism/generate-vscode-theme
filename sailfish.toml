@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: MPL-2.0
+
+template_dirs = ["src"]
+escape = false
+
+[optimizations]
+rm_whitespace = false

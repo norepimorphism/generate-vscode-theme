@@ -1,0 +1,23 @@
+{
+    "name": "norepi-color-theme",
+    "version": "0.0.1",
+    "publisher": "norepimorhism",
+    "engines": { "vscode": "^1.74.2" },
+    "license": "SEE LICENSE FILE",
+    "displayName": "Norepimorphism's color theme",
+    "description": "A simple color theme with green accents",
+    "categories": ["Themes"],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/norepimorphism/norepi-vscode-theme.git"
+    },
+    "contributes": {
+        "themes": [
+            {
+                "label": "Norepimorphism",
+                "uiTheme": "vs-dark",
+                "path": "./themes/norepi-color-theme.json"
+            }
+        ]
+    }
+}

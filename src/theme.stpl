@@ -1,0 +1,65 @@
+{
+    "type": "dark",
+    "colors": {
+        "editor.foreground": <%= colors.ui.fg.default %>,
+        "editor.background": <%= colors.ui.bg.default %>,
+        "editor.lineHighlightBackground": <%= colors.ui.bg.highlighted_lines %>,
+        "editorLineNumber.activeForeground": <%= colors.ui.fg.default %>,
+        "editorLineNumber.foreground": <%= colors.tokens.comments %>
+    },
+    "tokenColors": [
+        {
+            "name": "Comments",
+            "scope": "comment",
+            "settings": { "foreground": <%= colors.tokens.comments %> }
+        },
+        {
+            "name": "String literals",
+            "scope": "string",
+            "settings": { "foreground": <%= colors.tokens.lit.strings %> }
+        },
+        {
+            "name": "Character literals",
+            "scope": "string.quoted.single",
+            "settings": { "foreground": <%= colors.tokens.lit.chars %> }
+        },
+        {
+            "scope": "Numeric literals",
+            "settings": { "foreground": <%= colors.tokens.lit.numeric %> }
+        },
+        {
+            "name": "Keywords",
+            "scope": "keyword",
+            "settings": { "foreground": <%= colors.tokens.keywords %> }
+        },
+        {
+            "name": "Operators",
+            "scope": "keyword.operator",
+            "settings": { "foreground": <%= colors.tokens.operators %> }
+        },
+        {
+            "name": "Language constants",
+            "scope": "constant.language",
+            "settings": {
+                "fontStyle": "bold",
+                "foreground": <%= colors.tokens.constants.lang %>
+            }
+        },
+        {
+            "name": "Types",
+            "scope": "entity.name.type",
+            "settings": {
+                "fontStyle": "bold",
+                "foreground": <%= colors.tokens.types %>
+            }
+        },
+        {
+            "name": "Lifetimes",
+            "scope": "entity.name.type.lifetime",
+            "settings": {
+                "fontStyle": "",
+                "foreground": <%= colors.tokens.types %>
+            }
+        }
+    ]
+}

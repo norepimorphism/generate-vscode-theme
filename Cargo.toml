@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MPL-2.0
+
+[package]
+name = "generate-norepi-vscode-theme"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+minifier = "0.2"
+sailfish = "0.5"
